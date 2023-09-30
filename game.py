@@ -64,7 +64,7 @@ screen = pygame.display.set_mode((432,768))
 clock = pygame.time.Clock() 
 game_font = pygame.font.Font('04B_19.TTF',40)
 #trong lực cho bird tạo biến
-graviti = 0.25
+graviti = 0.20
 bird_movement = 0
 game_avt = True
 score = 0
@@ -118,7 +118,7 @@ while True:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE and game_avt:
                 bird_movement = 0
-                bird_movement = -11
+                bird_movement = -8
                 flap_sound.play() 
             if event.key == pygame.K_SPACE and game_avt ==False:
                 game_avt = True
